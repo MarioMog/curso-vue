@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello world Vue</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="main-container">
+        <div class="container" :class="user.genre">
+          <h1 class="title">{{title}}</h1>
+          <h2>{{messagge}}</h2>
+          <p><label>Name:</label> {{user.name}}</p>
+          <p><label>Age:</label> {{user.age}}</p>
+          <p>
+          <label>Facts:</label>
+          <ol id="facts">
+            <li v-for="fact in user.facts" :key="fact.message">
+              {{ fact.message }}
+            </li>
+          </ol>
+        </p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

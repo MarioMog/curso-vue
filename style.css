@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+}
+.container {
+  width: fit-content;
+  height: fit-content;
+  padding: 2%;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+h1 {
+  text-align: center;
+}
+.male {
+  box-shadow: 0 4px 2px -2px teal;
+}
+ol {
+  margin-left: 30px;
+}
+p {
+  margin-top: 10px;
+}
+label {
+  font-size: 1.2em;
+}
